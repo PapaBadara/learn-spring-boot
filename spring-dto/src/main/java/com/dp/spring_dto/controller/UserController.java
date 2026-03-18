@@ -1,5 +1,6 @@
 package com.dp.spring_dto.controller;
 
+import com.dp.spring_dto.dto.UserDTO;
 import com.dp.spring_dto.entity.User;
 import com.dp.spring_dto.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -16,12 +17,12 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping
-    public List<User> getAll(){
+    public List<UserDTO> getAll(){
         return userService.getAll();
     }
 
     @PostMapping
-    public User create(@RequestBody User user){
+    public UserDTO create(@RequestBody User user){
         return userService.save(user);
     }
 }
