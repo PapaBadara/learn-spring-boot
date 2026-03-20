@@ -1,0 +1,48 @@
+2026-03-20T02:36:07.615Z  INFO 30541 --- [pagination-filtre] [main] c.d.p.PaginationFiltreApplication        : Starting PaginationFiltreApplication using Java 17.0.18 with PID 30541 (/home/papa/IdeaProjects/learn-spring-boot/Spring-pagination-filtre/target/classes started by papa in /home/papa/IdeaProjects/learn-spring-boot/Spring-pagination-filtre)
+2026-03-20T02:36:07.619Z DEBUG 30541 --- [pagination-filtre] [main] c.d.p.PaginationFiltreApplication        : Running with Spring Boot v4.0.4, Spring v7.0.6
+2026-03-20T02:36:07.621Z  INFO 30541 --- [pagination-filtre] [main] c.d.p.PaginationFiltreApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-03-20T02:36:08.358Z  INFO 30541 --- [pagination-filtre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-20T02:36:08.444Z  INFO 30541 --- [pagination-filtre] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2026-03-20T02:36:09.020Z  INFO 30541 --- [pagination-filtre] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-20T02:36:09.044Z  INFO 30541 --- [pagination-filtre] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-20T02:36:09.045Z  INFO 30541 --- [pagination-filtre] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-20T02:36:09.121Z  INFO 30541 --- [pagination-filtre] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1412 ms
+2026-03-20T02:36:09.468Z  INFO 30541 --- [pagination-filtre] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-20T02:36:09.619Z  INFO 30541 --- [pagination-filtre] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-20T02:36:10.261Z  INFO 30541 --- [pagination-filtre] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-20T02:36:10.320Z  INFO 30541 --- [pagination-filtre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-20T02:36:10.596Z  INFO 30541 --- [pagination-filtre] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38fb151a
+2026-03-20T02:36:10.601Z  INFO 30541 --- [pagination-filtre] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-20T02:36:10.735Z  WARN 30541 --- [pagination-filtre] [main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-03-20T02:36:10.819Z  INFO 30541 --- [pagination-filtre] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/crud-springboot]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: crud-springboot/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-20T02:36:12.605Z  INFO 30541 --- [pagination-filtre] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-20T02:36:12.680Z  INFO 30541 --- [pagination-filtre] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T02:36:12.801Z  INFO 30541 --- [pagination-filtre] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-20T02:36:13.054Z  WARN 30541 --- [pagination-filtre] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-20T02:36:13.468Z  INFO 30541 --- [pagination-filtre] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-20T02:36:13.475Z  INFO 30541 --- [pagination-filtre] [main] c.d.p.PaginationFiltreApplication        : Started PaginationFiltreApplication in 6.532 seconds (process running for 7.207)
+2026-03-20T02:37:31.084Z  INFO 30541 --- [pagination-filtre] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-20T02:37:31.085Z  INFO 30541 --- [pagination-filtre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-20T02:37:31.090Z  INFO 30541 --- [pagination-filtre] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-20T02:37:31.158Z  INFO 30541 --- [pagination-filtre] [http-nio-8080-exec-2] c.d.p.controller.UserController          : Appel API GET /api/users
+2026-03-20T02:37:31.158Z  INFO 30541 --- [pagination-filtre] [http-nio-8080-exec-2] c.d.p.service.UserSevice                 : Recuperation des utilisateurs - page=0, size=5
+2026-03-20T02:37:31.529Z  WARN 30541 --- [pagination-filtre] [http-nio-8080-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-03-20T03:04:34.472Z  INFO 30541 --- [pagination-filtre] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-20T03:04:34.476Z  INFO 30541 --- [pagination-filtre] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-20T03:04:34.481Z  INFO 30541 --- [pagination-filtre] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-20T03:04:34.486Z  INFO 30541 --- [pagination-filtre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-20T03:04:34.496Z  INFO 30541 --- [pagination-filtre] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
